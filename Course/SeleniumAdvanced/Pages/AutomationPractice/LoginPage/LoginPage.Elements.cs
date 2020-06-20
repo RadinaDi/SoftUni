@@ -5,10 +5,10 @@ namespace SeleniumAdvanced.Pages.AutomationPractice.LoginPage
 {
     public partial class LoginPage : BasePage
     {
-        [FindsBy(How = How.XPath, Using = "/html/body/div/div[2]/div/div[3]/div/div/div[1]/form/div/div[2]/input")]
+        [FindsBy(How = How.Id, Using = "email_create")]
         public IWebElement EmailField { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "/html/body/div/div[2]/div/div[3]/div/div/div[1]/form/div/div[3]/button")]
+        [FindsBy(How = How.Id, Using = "SubmitCreate")]
         public IWebElement CreateAccountButton { get; set; }
     }
 }

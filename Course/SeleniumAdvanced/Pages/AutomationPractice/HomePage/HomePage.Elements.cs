@@ -5,7 +5,7 @@ namespace SeleniumAdvanced.Pages.AutomationPractice.HomePage
 {
     public partial class HomePage : BasePage
     {
-        [FindsBy(How = How.XPath, Using = "/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a")]
+        [FindsBy(How = How.XPath, Using = "//*/nav/div[1]/a[@class='login']")]
         public IWebElement SignInButton { get; set; }
     }
 }

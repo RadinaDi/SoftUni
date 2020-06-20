@@ -8,7 +8,9 @@ namespace SeleniumAdvanced
     {
         public BaseTest()
         {
-            this.Driver = new ChromeDriver();
+            ChromeOptions options = new ChromeOptions();
+            options.AddArgument("--headless");
+            this.Driver = new ChromeDriver(options);
             this.Driver.Manage().Window.Maximize();
         }
 

@@ -6,36 +6,36 @@ namespace SeleniumAdvanced.Pages.AutomationPractice.RegistrationPage
 {
     public partial class RegistrationPage : BasePage
     {
-        [FindsBy(How = How.XPath, Using = "/html/body/div/div[2]/div/div[3]/div/div/form/div[2]/p[13]/input")]
+        [FindsBy(How = How.Id, Using = "phone_mobile")]
         public IWebElement PhoneNumberField { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "/html/body/div/div[2]/div/div[3]/div/div/form/div[1]/div[3]/input")]
+        [FindsBy(How = How.Id, Using = "customer_lastname")]
         public IWebElement LastNameField { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "/html/body/div/div[2]/div/div[3]/div/div/form/div[1]/div[2]/input")]
+        [FindsBy(How = How.Id, Using = "customer_firstname")]
         public IWebElement FirstNameField { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "/html/body/div/div[2]/div/div[3]/div/div/form/div[1]/div[5]/input")]
+        [FindsBy(How = How.Id, Using = "passwd")]
         public IWebElement PasswordField { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "/html/body/div/div[2]/div/div[3]/div/div/form/div[2]/p[4]/input")]
+        [FindsBy(How = How.Id, Using = "address1")]
         public IWebElement AddressField { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "/html/body/div/div[2]/div/div[3]/div/div/form/div[2]/p[6]/input")]
+        [FindsBy(How = How.Id, Using = "city")]
         public IWebElement CityField { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "/html/body/div/div[2]/div/div[3]/div/div/form/div[2]/p[8]/input")]
+        [FindsBy(How = How.Id, Using = "postcode")]
         public IWebElement ZipField { get; set; }
 
         public SelectElement StateField => new SelectElement(this.StateElement);
 
-        [FindsBy(How = How.XPath, Using = "/html/body/div/div[2]/div/div[3]/div/div/form/div[4]/button")]
+        [FindsBy(How = How.Id, Using = "submitAccount")]
         public IWebElement RegisterButton { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "/html/body/div/div[2]/div/div[3]/div/div/ol/li[1]")]
+        [FindsBy(How = How.XPath, Using = "//div[@id='center_column']/div/ol/li[1]")]
         public IWebElement ValidationSummary { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "/html/body/div/div[2]/div/div[3]/div/div/form/div[2]/p[7]/div/select")]
+        [FindsBy(How = How.Id, Using = "id_state")]
         private IWebElement StateElement { get; set; }
     }
 }
