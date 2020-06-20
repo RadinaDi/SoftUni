@@ -4,8 +4,6 @@ namespace ListOfFruits
 {
     class Program
     {
-        private static readonly object price;
-
         static void Main(string[] args)
         {
             Basket basket = new Basket();
