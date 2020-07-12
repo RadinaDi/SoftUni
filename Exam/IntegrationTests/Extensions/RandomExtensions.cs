@@ -1,11 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
-namespace SeleniumAdvanced.Extensions
+namespace IntegrationTests.Extensions
 {
     public static class RandomExtensions
     {
-        private const string Charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        private const string Charset = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
         public static string NextString(this Random random, int fixedLength = -1, int minLength = 1, int maxLength = 1000)
         {
